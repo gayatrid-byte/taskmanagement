@@ -16,11 +16,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 
 app.use(
-  cors({
-    origin: ["http://localhost:3000", "http://localhost:3001","https://teamtaskify.netlify.app"],
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
-  })
+  cors()
 );
 
 app.use(express.json());
