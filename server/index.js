@@ -7,7 +7,7 @@ import { errorHandler, routeNotFound } from "./middleware/errorMiddleware.js";
 import routes from "./routes/index.js";
 import dbConnection from "./utils/connectDB.js";
 
-dotenv.config();
+dotenv.config({ path: "./.env" });
 
 dbConnection();
 
