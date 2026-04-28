@@ -8,7 +8,7 @@ import routes from "./routes/index.js";
 import dbConnection from "./utils/connectDB.js";
 
 dotenv.config({ path: "./.env" });
-
+console.log("ENV CHECK:", process.env.MONGO_URI);
 dbConnection();
 
 const port = process.env.PORT || 5000;
