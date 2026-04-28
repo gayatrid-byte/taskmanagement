@@ -89,3 +89,17 @@ The Cloud-Based Task Manager is an innovative solution that brings efficiency an
 scp -i task-mern.pem -r ec2-user@34.231.243.201:/home/ec2-user/taskmanagement/client/dist .
 
 set permission accordingly
+
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicRead",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
+    }
+  ]
+}
