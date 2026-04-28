@@ -84,3 +84,8 @@ With the rise of remote work and dispersed teams, there is a growing need for to
 The Cloud-Based Task Manager is an innovative solution that brings efficiency and organization to task management within teams. By harnessing the power of the MERN stack and modern frontend technologies, the platform provides a seamless experience for both administrators and users, fostering collaboration and productivity.
 
 &nbsp;
+
+
+scp -i task-mern.pem -r ec2-user@34.231.243.201:/home/ec2-user/taskmanagement/client/dist .
+
+set permission accordingly
